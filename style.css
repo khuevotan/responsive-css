@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: aqua;
+    height: 100px;
+}
+
+#content {
+    /* 600px/960px */
+    width: 62.5%;
+    float: left;
+    background-color: yellow;
+    height: 400px;
+}
+
+#sidebar {
+    /* 300px/960px */
+    width: 37.5%;
+    float: left;
+    background-color: orange;
+    height: 400px;
+}
+
+#footer {
+    clear: left;
+    background-color: red;
+    height: 100px;
+}
+
+@media screen and (max-width: 992px){
+
+    /* Rule Tablet */
+    #sidebar {
+        width: 50%;
+    }
+
+    #content {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    /* Rule SmartPhone */
+    #sidebar {
+        width: 100%;
+    }
+
+    #content {
+        width: 100%;
+    }
+}
